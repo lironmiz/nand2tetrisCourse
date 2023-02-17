@@ -103,6 +103,7 @@ Noam Nissan, Hebrew University
   - [7. NAND](#7-nand)
   - [8. LOGIC GATES](#8-logic-gates)
   - [9. HARDWARE DESCRIPTION LANGUAGE](#9-hardware-sescription-language)
+  - [10. BUSES](#10-buses)
 
 ## 2. BOOLEAN VALUES
 
@@ -218,6 +219,18 @@ In computer science, HDL stands for Hardware Description Language. It is a speci
 ![image](https://user-images.githubusercontent.com/91504420/219814949-ca088a4d-e871-4faf-a1d0-fd5e2b85938d.png)
 
 ![image](https://user-images.githubusercontent.com/91504420/219815457-8b8f06a2-5a14-476f-b430-b4407d14308d.png)
+
+## 10. BUSES
+
+![LittleBitOfThisLittleBitOfThatMarissaRachelGIF](https://user-images.githubusercontent.com/91504420/219816902-7a6d3474-934f-4a6e-8a91-c4b1f65d4996.gif)
+
+In computer architecture and digital electronics, a bus of bits refers to a collection of wires or conductors that carry multiple bits of data in parallel. Buses of bits are used to transfer data and signals between different components or devices within a computer or electronic system. The size of a bus of bits, commonly referred to as its width, is measured in bits and determines the maximum amount of data that can be transferred in a single clock cycle.
+
+Buses of bits can be classified based on their purpose, such as data buses, address buses, control buses, and expansion buses. They are commonly used in microprocessors, memory systems, and other digital circuits where high-speed data transfer is required. Buses of bits are an essential component of digital systems and play a critical role in determining the performance and capabilities of the system.
+
+![image](https://user-images.githubusercontent.com/91504420/219816955-c952856f-ee00-493f-9b0c-6e763fffbd61.png)
+
+![image](https://user-images.githubusercontent.com/91504420/219817195-e111a2c2-0144-4445-b8a9-07ff2c59da85.png)
 
 
 <!-- Contact -->
