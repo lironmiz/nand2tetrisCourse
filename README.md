@@ -99,6 +99,7 @@ Noam Nissan, Hebrew University
   - [3. BOOLEAN VARIABLES](#3-boolean-variables)
   - [4. BOOLEAN FUNCTIONS](#4-boolean-functions)
   - [5. BOOLEAN ALGEBRA](#5-boolean-algebra)
+  - [6. DISJUNCTIVE NORMAL FORM](#5-disjunctive-normal-form)
 
 ## 2. BOOLEAN VALUES
 
@@ -153,6 +154,17 @@ Boolean algebra is an important concept in computer science and digital electron
 | De Morgan's Law      | NOT (A AND B) = (NOT A) OR (NOT B) <br> NOT (A OR B) = (NOT A) AND (NOT B) |
 | Absorption Law       | A OR (A AND B) = A <br> A AND (A OR B) = A |
 
+## 6. DISJUNCTIVE NORMAL FORM
+
+![ICanDoItJonTafferGIF](https://user-images.githubusercontent.com/91504420/219798501-6e9022af-4cdf-4ba0-a004-d60dd3830b9f.gif)
+
+DNF stands for Disjunctive Normal Form, which is a way to represent a Boolean function as the logical OR of multiple AND terms. In other words, it is a way to express a Boolean function as a sum of products.
+
+To convert a Boolean expression to DNF, one needs to:
+
+Expand the expression into a sum of minterms, which are the product terms that evaluate to 1 for the given combination of input variables.
+Combine the minterms with logical OR operator to obtain the DNF.
+DNF is useful in digital circuit design because it provides a way to represent a Boolean function in a form that is amenable to logic gate implementation. Additionally, DNF can be used to find the minimal sum-of-products representation of a Boolean function, which is the expression that uses the smallest number of terms and literals to represent the function.
 
 <!-- Contact -->
 # :handshake: Contact
