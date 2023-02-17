@@ -3,10 +3,11 @@
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="50" width="100%">
 
-The course deals with building a modern computer from basic logic gates such as "nand" to a general computer architecture that is designed
-execute any program such as "Tetris". All the hardware components (chips) when all the components are built by the students of the course in a hardware characterization language
-learned during the course. When the hardware programs are taught and tested on a hardware simulator that is provided along with the course materials. 
-also during the course i build assembler program to translate programs written in symbolic language into binary code. 💥
+the course is on building a modern computer from basic logic gates to a general computer architecture capable of executing programs such as "Tetris".
+
+during the course i was learn how to design and build all the hardware components (chips) using a hardware description language taught in the course. I was responsible for building these components from scratch and testing them using a hardware simulator provided along with the course materials. This hands-on experience was provided me with an in-depth understanding of the computer's inner workings. Additionally, I will also learn how to build an assembler program to translate programs written in symbolic language into binary code. This skill will enable me to program my computer and execute my own code.
+
+By the end of this course, I will have the knowledge and practical experience necessary to build a fully functional computer and write my own programs. This is a challenging but rewarding course that will provide me with a unique understanding of how computers work.
 
 Course instructors:
 
