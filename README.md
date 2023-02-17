@@ -98,6 +98,7 @@ Noam Nissan, Hebrew University
   - [2. BOOLEAN VALUES](#2-boolean-values)
   - [3. BOOLEAN VARIABLES](#3-boolean-variables)
   - [4. BOOLEAN FUNCTIONS](#4-boolean-functions)
+  - [5. BOOLEAN ALGEBRA](#5-boolean-algebra)
 
 ## 2. BOOLEAN VALUES
 
@@ -120,6 +121,37 @@ A Boolean variable is a variable that can store a Boolean value. It is a variabl
 A Boolean function is a function that takes one or more Boolean values as input and produces a single Boolean value as output. Boolean functions are used to perform logical operations on Boolean values. Some common Boolean functions include AND, OR, NOT, XOR, and NAND. These functions are used to combine, negate, or compare Boolean values to determine whether a given condition is true or false.
 
 ![image](https://user-images.githubusercontent.com/91504420/219794330-e9b0925f-abad-4d8d-afee-ed1c2ae76d47.png)
+
+## 5. BOOLEAN ALGEBRA
+
+![AWholeNewWorldAladdinGIF](https://user-images.githubusercontent.com/91504420/219796635-97f6dde2-a09a-46cb-bcc5-d2313a11100f.gif)
+
+oolean algebra is a branch of mathematics that deals with logical operations on true or false values, which are represented as 1 and 0, respectively. It is an algebraic system that is used to represent logical propositions and analyze their properties.
+
+Here's a summary of some of the key concepts in Boolean algebra:
+
+Boolean operators: The three primary Boolean operators are AND, OR, and NOT. These operators are used to perform logical operations on Boolean values.
+
+Boolean expressions: A Boolean expression is a combination of Boolean variables and operators that evaluates to a Boolean value. For example, the expression "A AND B" is a Boolean expression that is true only if both A and B are true.
+
+Truth tables: A truth table is a table that lists all possible combinations of inputs for a Boolean expression and the resulting output. Truth tables are used to analyze and evaluate Boolean expressions.
+
+Laws of Boolean algebra: There are several laws of Boolean algebra, including the commutative, associative, distributive, and identity laws. These laws provide a set of rules that can be used to simplify and manipulate Boolean expressions.
+
+Boolean functions: A Boolean function is a function that takes one or more Boolean values as input and produces a single Boolean value as output. Boolean functions are used to perform logical operations on Boolean values.
+
+Boolean algebra is an important concept in computer science and digital electronics, and is used extensively in the design and analysis of digital circuits and systems.
+
+| Law                  | Equation                              |
+|----------------------|---------------------------------------|
+| Commutative Law      | A AND B = B AND A <br> A OR B = B OR A |
+| Associative Law      | (A AND B) AND C = A AND (B AND C) <br> (A OR B) OR C = A OR (B OR C) |
+| Distributive Law     | A AND (B OR C) = (A AND B) OR (A AND C) <br> A OR (B AND C) = (A OR B) AND (A OR C) |
+| Identity Law         | A AND 1 = A <br> A OR 0 = A |
+| Negation Law         | A AND NOT A = 0 <br> A OR NOT A = 1 |
+| Double Negation Law  | NOT (NOT A) = A |
+| De Morgan's Law      | NOT (A AND B) = (NOT A) OR (NOT B) <br> NOT (A OR B) = (NOT A) AND (NOT B) |
+| Absorption Law       | A OR (A AND B) = A <br> A AND (A OR B) = A |
 
 
 <!-- Contact -->
