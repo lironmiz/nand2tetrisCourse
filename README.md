@@ -101,6 +101,7 @@ Noam Nissan, Hebrew University
   - [5. BOOLEAN ALGEBRA](#5-boolean-algebra)
   - [6. DISJUNCTIVE NORMAL FORM](#6-disjunctive-normal-form)
   - [7. NAND](#7-nand)
+  - [8. LOGIC GATES](#8-logic-gates)
 
 ## 2. BOOLEAN VALUES
 
@@ -179,6 +180,27 @@ NAND gates are widely used in digital circuit design because they are relatively
 
 ![image](https://user-images.githubusercontent.com/91504420/219799749-80dbab6e-b972-42f2-a47a-0552ff7fc808.png)
 
+## 8. LOGIC GATES
+
+![FeelMeThinkAboutItGIF](https://user-images.githubusercontent.com/91504420/219811381-fdb32fc6-be9c-48c9-a76c-ebeb38e129fd.gif)
+
+Logic gates are electronic circuits that perform logical operations on one or more binary inputs to produce a single binary output. They are the building blocks of digital circuits and computers, and are used to implement Boolean algebraic functions in electronic devices.
+
+There are several types of logic gates, including:
+
++ NOT gate: also known as an inverter, it produces an output that is the opposite of its input.
+
++ AND gate: it produces an output of 1 only when all of its inputs are 1.
+
++ OR gate: it produces an output of 1 when any of its inputs are 1.
+
++ XOR gate: it produces an output of 1 when exactly one of its inputs is 1.
+
++ NAND gate: it produces an output of 0 only when all of its inputs are 1, otherwise it produces an output of 1.
+
++ NOR gate: it produces an output of 0 when any of its inputs are 1, otherwise it produces an output of 1.
+
+Logic gates are used to build more complex circuits such as adders, multipliers, memory units, and microprocessors. The design of digital circuits using logic gates is an important part of computer engineering and is used in various fields, including robotics, communications, and control systems.
 
 <!-- Contact -->
 # :handshake: Contact
