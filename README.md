@@ -95,9 +95,32 @@ Noam Nissan, Hebrew University
 
 ## 1. TABLE OF CONTENTS
   - [1. TABLE OF CONTENTS](#1-table-of-contents)
-  - [2. PRIMITIVE VARIABLES TYPES](#2-primitive-variables-types)
+  - [2. BOOLEAN VALUES](#2-boolean-values)
+  - [3. BOOLEAN VARIABLES](#3-boolean-variables)
+  - [4. BOOLEAN FUNCTIONS](#4-boolean-functions)
 
-## 2. PRIMITIVE VARIABLES TYPES
+## 2. BOOLEAN VALUES
+
+![TrueOrFalseAndyCohenGIF (2)](https://user-images.githubusercontent.com/91504420/219793288-c281cd34-9b91-4b79-8412-3118b2af6549.gif)
+
+A Boolean value is a data type that has two possible values, either "true" or "false". Boolean values are often used in programming to make decisions, comparisons, and to control program flow.
+
+![image](https://user-images.githubusercontent.com/91504420/219793033-d9ea42c7-bc0d-4fd5-b7bb-267eb00a2128.png)
+
+## 3. BOOLEAN VARIABLES
+
+![ThereAreSoManyVariablesInPlayDavidRoseGIF](https://user-images.githubusercontent.com/91504420/219793867-04f1d601-8edb-4c42-9b1b-6d01dd7b4583.gif)
+
+A Boolean variable is a variable that can store a Boolean value. It is a variable that can only hold the value "true" or "false". Boolean variables are often used to represent conditions, such as whether a condition is true or false.
+
+## 4. BOOLEAN FUNCTIONS
+
+![JojiFilthyFrankGIF](https://user-images.githubusercontent.com/91504420/219794233-5c49a45a-ce0d-419b-8034-3cfae1d849b3.gif)
+
+A Boolean function is a function that takes one or more Boolean values as input and produces a single Boolean value as output. Boolean functions are used to perform logical operations on Boolean values. Some common Boolean functions include AND, OR, NOT, XOR, and NAND. These functions are used to combine, negate, or compare Boolean values to determine whether a given condition is true or false.
+
+![image](https://user-images.githubusercontent.com/91504420/219794330-e9b0925f-abad-4d8d-afee-ed1c2ae76d47.png)
+
 
 <!-- Contact -->
 # :handshake: Contact
