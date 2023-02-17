@@ -211,6 +211,14 @@ In computer science, HDL stands for Hardware Description Language. It is a speci
 
 ![image](https://user-images.githubusercontent.com/91504420/219812413-37cdbe74-b3f3-41cb-9204-893dc5101d7f.png)
 
+![image](https://user-images.githubusercontent.com/91504420/219813215-ce5d2b40-bccb-48ae-aa90-69929fb95a86.png)
+
+![image](https://user-images.githubusercontent.com/91504420/219814345-3e1ca794-12e4-43fc-94b2-0bf2b0fe852c.png)
+
+![image](https://user-images.githubusercontent.com/91504420/219814949-ca088a4d-e871-4faf-a1d0-fd5e2b85938d.png)
+
+![image](https://user-images.githubusercontent.com/91504420/219815457-8b8f06a2-5a14-476f-b430-b4407d14308d.png)
+
 
 <!-- Contact -->
 # :handshake: Contact
