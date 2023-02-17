@@ -99,7 +99,8 @@ Noam Nissan, Hebrew University
   - [3. BOOLEAN VARIABLES](#3-boolean-variables)
   - [4. BOOLEAN FUNCTIONS](#4-boolean-functions)
   - [5. BOOLEAN ALGEBRA](#5-boolean-algebra)
-  - [6. DISJUNCTIVE NORMAL FORM](#5-disjunctive-normal-form)
+  - [6. DISJUNCTIVE NORMAL FORM](#6-disjunctive-normal-form)
+  - [7. NAND](#7-nand)
 
 ## 2. BOOLEAN VALUES
 
@@ -165,6 +166,19 @@ To convert a Boolean expression to DNF, one needs to:
 Expand the expression into a sum of minterms, which are the product terms that evaluate to 1 for the given combination of input variables.
 Combine the minterms with logical OR operator to obtain the DNF.
 DNF is useful in digital circuit design because it provides a way to represent a Boolean function in a form that is amenable to logic gate implementation. Additionally, DNF can be used to find the minimal sum-of-products representation of a Boolean function, which is the expression that uses the smallest number of terms and literals to represent the function.
+
+## 7. NAND
+
+![IveGotThePowerJimCarreyGIF](https://user-images.githubusercontent.com/91504420/219799684-e8cd5755-6363-4b97-b4b1-b1a64b1e04be.gif)
+
+NAND (not-and) is a logical operation in Boolean algebra that returns a FALSE output only when both of its inputs are TRUE, and returns a TRUE output for all other input combinations. In other words, it is the negation of the logical AND operation.
+
+NAND is a universal gate, which means that any Boolean function can be expressed using NAND gates only. This is because NAND can be used to implement all the other basic Boolean operations such as NOT, AND, OR, and XOR. In fact, it is possible to construct an entire digital circuit using only NAND gates.
+
+NAND gates are widely used in digital circuit design because they are relatively simple to implement and provide a compact and efficient way to represent Boolean functions. Additionally, NAND gates have the property of logical equivalence, which means that any Boolean expression can be transformed into an equivalent expression using only NAND gates, without changing the logical function that it represents.
+
+![image](https://user-images.githubusercontent.com/91504420/219799749-80dbab6e-b972-42f2-a47a-0552ff7fc808.png)
+
 
 <!-- Contact -->
 # :handshake: Contact
