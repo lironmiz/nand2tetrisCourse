@@ -102,6 +102,7 @@ Noam Nissan, Hebrew University
   - [6. DISJUNCTIVE NORMAL FORM](#6-disjunctive-normal-form)
   - [7. NAND](#7-nand)
   - [8. LOGIC GATES](#8-logic-gates)
+  - [9. HARDWARE DESCRIPTION LANGUAGE](#9-hardware-sescription-language)
 
 ## 2. BOOLEAN VALUES
 
@@ -201,6 +202,15 @@ There are several types of logic gates, including:
 + NOR gate: it produces an output of 0 when any of its inputs are 1, otherwise it produces an output of 1.
 
 Logic gates are used to build more complex circuits such as adders, multipliers, memory units, and microprocessors. The design of digital circuits using logic gates is an important part of computer engineering and is used in various fields, including robotics, communications, and control systems.
+
+## 9. HARDWARE DESCRIPTION LANGUAGE
+
+![GandalfICanHelpGIF](https://user-images.githubusercontent.com/91504420/219812841-d3f23138-65a7-4851-90c8-aa509adb1536.gif)
+
+In computer science, HDL stands for Hardware Description Language. It is a specialized programming language used to design and describe digital circuits and systems at the register-transfer level (RTL). HDLs are used to specify the behavior of digital circuits and can be used to simulate, verify, and synthesize digital circuits. HDLs are used to create designs for logic gates and other digital components, and can be used to describe the structure and functionality of entire digital systems. Some popular HDLs include Verilog and VHDL.
+
+![image](https://user-images.githubusercontent.com/91504420/219812413-37cdbe74-b3f3-41cb-9204-893dc5101d7f.png)
+
 
 <!-- Contact -->
 # :handshake: Contact
