@@ -105,6 +105,7 @@ Noam Nissan, Hebrew University
   - [9. HARDWARE DESCRIPTION LANGUAGE](#9-hardware-sescription-language)
   - [10. BUSES](#10-buses)
   - [11. MULTIPLEXOR](#11-multiplexor)
+  - [12. DEMULTIPLEXOR](#12-demultiplexor)
 
 ## 2. BOOLEAN VALUES
 
@@ -243,8 +244,24 @@ Multiplexers are commonly used in digital circuits to reduce the number of wires
 
 Multiplexers are available in a range of sizes, typically based on the number of input signals that they can handle. Common examples include 2-to-1, 4-to-1, 8-to-1, and 16-to-1 multiplexers. Multiplexers are widely used in digital design and play a critical role in many modern electronic systems.
 
-
 ![image](https://user-images.githubusercontent.com/91504420/219818879-e6bfd432-e82a-4eef-933f-a45e3236a10d.png)
+
+![image](https://user-images.githubusercontent.com/91504420/219819237-59fbbe7e-7c31-4fa1-8415-effaa9602ac3.png)
+
+## 12. DEMULTIPLEXOR
+
+![ThisIsSoSimilarYetDifferentRachelSmithGIF](https://user-images.githubusercontent.com/91504420/219819407-1d301f42-95ce-4bf5-bb35-75b4a9eccaa0.gif)
+
+In digital electronics and computer architecture, a demultiplexer (also known as a DEMUX) is a device that takes a single input signal and routes it to one of several output lines based on a set of control inputs. A demultiplexer is essentially the reverse of a multiplexer, which takes several input signals and selects one of them to be forwarded to a single output line.
+
+A demultiplexer is commonly used to expand the capacity of a shared communication line, allowing multiple data streams to be transmitted and received over a single channel. Demultiplexers can also be used to route signals to different processing units or to control the flow of data within a larger system.
+
+Like multiplexers, demultiplexers are available in a range of sizes based on the number of output lines they can handle, such as 1-to-2, 1-to-4, and 1-to-8 demultiplexers. Demultiplexers play a critical role in digital design and are widely used in many modern electronic systems.
+
+![image](https://user-images.githubusercontent.com/91504420/219819424-56086abd-990d-4f96-a3f1-ba1aba541c62.png)
+
+![image](https://user-images.githubusercontent.com/91504420/219819651-6055ac67-855e-4be4-9962-2048a1cebe20.png)
+
 
 <!-- Contact -->
 # :handshake: Contact
