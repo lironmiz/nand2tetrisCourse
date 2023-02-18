@@ -104,6 +104,7 @@ Noam Nissan, Hebrew University
   - [8. LOGIC GATES](#8-logic-gates)
   - [9. HARDWARE DESCRIPTION LANGUAGE](#9-hardware-sescription-language)
   - [10. BUSES](#10-buses)
+  - [11. MULTIPLEXOR](#11-multiplexor)
 
 ## 2. BOOLEAN VALUES
 
@@ -232,6 +233,18 @@ Buses of bits can be classified based on their purpose, such as data buses, addr
 
 ![image](https://user-images.githubusercontent.com/91504420/219817195-e111a2c2-0144-4445-b8a9-07ff2c59da85.png)
 
+## 11. MULTIPLEXOR
+
+![DependsOnTheMoodDeanSchneiderGIF](https://user-images.githubusercontent.com/91504420/219818930-7e43b405-62e7-4299-a615-258f132ab158.gif)
+
+In digital electronics and computer architecture, a multiplexer (also known as a MUX) is a device that selects one of several input signals and forwards it to a single output line. A multiplexer operates by using a set of control inputs to determine which of the input signals should be routed to the output.
+
+Multiplexers are commonly used in digital circuits to reduce the number of wires required to transmit data, as well as to select between different sources of data or signals. They are often used in combination with demultiplexers to transmit and receive data over shared communication lines.
+
+Multiplexers are available in a range of sizes, typically based on the number of input signals that they can handle. Common examples include 2-to-1, 4-to-1, 8-to-1, and 16-to-1 multiplexers. Multiplexers are widely used in digital design and play a critical role in many modern electronic systems.
+
+
+![image](https://user-images.githubusercontent.com/91504420/219818879-e6bfd432-e82a-4eef-933f-a45e3236a10d.png)
 
 <!-- Contact -->
 # :handshake: Contact
