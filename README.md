@@ -106,7 +106,7 @@ Noam Nissan, Hebrew University
   - [10. BUSES](#10-buses)
   - [11. MULTIPLEXOR](#11-multiplexor)
   - [12. DEMULTIPLEXOR](#12-demultiplexor)
-
+  - [13. PROJECT1](#13-project1)
 ## 2. BOOLEAN VALUES
 
 ![TrueOrFalseAndyCohenGIF (2)](https://user-images.githubusercontent.com/91504420/219793288-c281cd34-9b91-4b79-8412-3118b2af6549.gif)
@@ -262,7 +262,101 @@ Like multiplexers, demultiplexers are available in a range of sizes based on the
 
 ![image](https://user-images.githubusercontent.com/91504420/219819651-6055ac67-855e-4be4-9962-2048a1cebe20.png)
 
+## 13. PROJECT1
 
+### not logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Not.hdl
+
+/**
+ * Not gate:
+ * out = not in
+ */
+CHIP Not {
+    IN in;
+    OUT out;
+
+    PARTS:
+    Nand(a=in, b=in, out=out);
+}
+```
+### output file not gate:
+
+![image](https://user-images.githubusercontent.com/91504420/219874107-65376354-24e1-4467-8976-53c55dc371b6.png)
+
+### compare file not gate:
+
+![image](https://user-images.githubusercontent.com/91504420/219874153-4acbd951-f39c-4cf8-afef-497ced0f7ad7.png)
+
+### or logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Or.hdl
+
+ /**
+ * Or gate:
+ * out = 1 if (a == 1 or b == 1)
+ *       0 otherwise
+ */
+
+CHIP Or {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+	Not(in=a, out=notA);
+	Not(in=b, out=notB);
+	Nand(a=notA, b=notB, out=out);
+}
+```
+### output file or gate:
+
+![image](https://user-images.githubusercontent.com/91504420/219874642-0db5421a-917d-4e9d-bace-57acf4807b68.png)
+
+
+### compare file or gate:
+
+![image](https://user-images.githubusercontent.com/91504420/219874663-37949581-6ff1-423e-99fb-0a113dfd019c.png)
+
+### and logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/And.hdl
+
+/**
+ * And gate: 
+ * out = 1 if (a == 1 and b == 1)
+ *       0 otherwise
+ */
+
+CHIP And {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+	Nand(a=a, b=b, out=nandOutput);
+	Not(in=nandOutput, out=out);
+}
+```
+### output file and gate:
+![image](https://user-images.githubusercontent.com/91504420/219875022-8906f2f6-b168-43cf-832e-dce1d6c8f97c.png)
+
+
+### compare file and gate:
+
+![image](https://user-images.githubusercontent.com/91504420/219875032-3051ae3e-fc3c-46d2-bdba-4bce5f3fbf8b.png)
+
+### 
 <!-- Contact -->
 # :handshake: Contact
 
