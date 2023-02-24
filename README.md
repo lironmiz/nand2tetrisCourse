@@ -388,6 +388,6 @@ Links to information that helped me during construction and learning:
 <!-- Project status -->
 ## :octocat: Project Status
 
-### Project is: In Prograss!
+### Project is: In Progress!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
