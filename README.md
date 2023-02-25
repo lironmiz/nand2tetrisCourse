@@ -437,6 +437,183 @@ CHIP Mux {
 
 ![image](https://user-images.githubusercontent.com/91504420/221359874-a47e1017-1769-47f7-be9b-ce0b74020a41.png)
 
+### dmux logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/DMux.hdl
+
+/**
+ * Dmultiplexor.  
+ * {a,b} = {in,0} if sel == 0
+ *         {0,in} if sel == 1
+ */
+
+CHIP DMux {
+    IN in, sel;
+    OUT a, b;
+
+    PARTS:
+    Not(in=sel, out=nsel);
+    And(a=nsel, b=in, out=a);
+    And(a=sel, b=in, out=b);
+}
+```
+### output file dmux gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221361245-42dd395f-1fc1-4b1b-bfda-56d063ebc25d.png)
+
+### compare file dmux gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221361255-a55a1334-668f-42d5-bfa0-c138d498a7ed.png)
+
+### dmux gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221361137-00d926db-2d3b-424d-b22e-4859310a7538.png)
+
+### not16 logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Not16.hdl
+
+/**
+ * 16-bit Not gate: for i = 0..15: out[i] = Not in[i]
+ */
+
+CHIP Not16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    Nand(a=in[0], b=in[0], out=out[0]);
+    Nand(a=in[1], b=in[1], out=out[1]);
+    Nand(a=in[2], b=in[2], out=out[2]);
+    Nand(a=in[3], b=in[3], out=out[3]);
+    Nand(a=in[4], b=in[4], out=out[4]);
+    Nand(a=in[5], b=in[5], out=out[5]);
+    Nand(a=in[6], b=in[6], out=out[6]);
+    Nand(a=in[7], b=in[7], out=out[7]);
+    Nand(a=in[8], b=in[8], out=out[8]);
+    Nand(a=in[9], b=in[9], out=out[9]);
+    Nand(a=in[10], b=in[10], out=out[10]);
+    Nand(a=in[11], b=in[11], out=out[11]);
+    Nand(a=in[12], b=in[12], out=out[12]);
+    Nand(a=in[13], b=in[13], out=out[13]);
+    Nand(a=in[14], b=in[14], out=out[14]);
+    Nand(a=in[15], b=in[15], out=out[15]);
+}
+```
+### output file not16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221362075-0ce2983f-e802-4d1d-8cd5-e547c2b5e089.png)
+
+### compare file not16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221362090-aac4e65b-5e74-413f-a849-5626249a34c1.png)
+
+### not16 gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221362670-d7d1c385-0f6b-44ff-9808-18746a0c299c.png)
+
+### and16 logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/And16.hdl
+
+/**
+ * 16-bit-wise And gate: for i = 0..15: out[i] = a[i] And b[i]
+ */
+
+CHIP And16 {
+    IN a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+    And(a=a[0], b=b[0], out=out[0]);
+    And(a=a[1], b=b[1], out=out[1]);
+    And(a=a[2], b=b[2], out=out[2]);
+    And(a=a[3], b=b[3], out=out[3]);
+    And(a=a[4], b=b[4], out=out[4]);
+    And(a=a[5], b=b[5], out=out[5]);
+    And(a=a[6], b=b[6], out=out[6]);
+    And(a=a[7], b=b[7], out=out[7]);
+    And(a=a[8], b=b[8], out=out[8]);
+    And(a=a[9], b=b[9], out=out[9]);
+    And(a=a[10], b=b[10], out=out[10]);
+    And(a=a[11], b=b[11], out=out[11]);
+    And(a=a[12], b=b[12], out=out[12]);
+    And(a=a[13], b=b[13], out=out[13]);
+    And(a=a[14], b=b[14], out=out[14]);
+    And(a=a[15], b=b[15], out=out[15]);
+}
+```
+### output file and16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221363510-a2ac3b7b-cf42-404d-a9dd-b1266c6e131c.png)
+
+### compare file and16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221363525-d565bc8c-7237-4cb5-b1a1-b3397d49dadf.png)
+
+### and16 gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221364210-6daaf116-24ba-430a-a93f-6d5b5c35d8b3.png)
+
+### mux16 logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux16.hdl
+
+/**
+ * 16-bit multiplexor. If sel == 1 then out = b else out = a.
+ */
+
+CHIP Mux16 {
+    IN a[16], b[16], sel;
+    OUT out[16];
+
+    PARTS:
+    Mux(a=a[0], b=b[0], sel=sel, out=out[0]);
+    Mux(a=a[1], b=b[1], sel=sel, out=out[1]);
+    Mux(a=a[2], b=b[2], sel=sel, out=out[2]);
+    Mux(a=a[3], b=b[3], sel=sel, out=out[3]);
+    Mux(a=a[4], b=b[4], sel=sel, out=out[4]);
+    Mux(a=a[5], b=b[5], sel=sel, out=out[5]);
+    Mux(a=a[6], b=b[6], sel=sel, out=out[6]);
+    Mux(a=a[7], b=b[7], sel=sel, out=out[7]);
+    Mux(a=a[8], b=b[8], sel=sel, out=out[8]);
+    Mux(a=a[9], b=b[9], sel=sel, out=out[9]);
+    Mux(a=a[10], b=b[10], sel=sel, out=out[10]);
+    Mux(a=a[11], b=b[11], sel=sel, out=out[11]);
+    Mux(a=a[12], b=b[12], sel=sel, out=out[12]);
+    Mux(a=a[13], b=b[13], sel=sel, out=out[13]);
+    Mux(a=a[14], b=b[14], sel=sel, out=out[14]);
+    Mux(a=a[15], b=b[15], sel=sel, out=out[15]);
+}
+```
+### output file mux16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221364502-33a569db-3b17-44c3-b88e-c1f02fb08867.png)
+
+### compare file mux16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221364515-ffb7d18d-e11e-46b5-a1b6-fd8f1a4d5622.png)
+
+### mux16 gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221367258-b8a0103b-7e5e-4a46-bba7-3058c72dc8e0.png)
+
 <!-- Contact -->
 # :handshake: Contact
 
