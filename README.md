@@ -356,7 +356,36 @@ CHIP And {
 
 ![image](https://user-images.githubusercontent.com/91504420/219875032-3051ae3e-fc3c-46d2-bdba-4bce5f3fbf8b.png)
 
-### 
+### xor logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Xor.hdl
+
+/**
+ * Exclusive-or gate:
+ * out = not (a == b)
+ */
+
+CHIP Xor {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    Or(a=a, b=b, out=c1);
+    Nand(a=a, b=b, out=c2);
+    And(a=c1, b=c2, out=out);
+}
+```
+### output file xor gate:
+
+
+
+### compare file xor gate:
+
+
 <!-- Contact -->
 # :handshake: Contact
 
