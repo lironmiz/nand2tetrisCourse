@@ -292,6 +292,10 @@ CHIP Not {
 
 ![image](https://user-images.githubusercontent.com/91504420/219874153-4acbd951-f39c-4cf8-afef-497ced0f7ad7.png)
 
+### not gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221359570-3d4ea240-595b-47d9-b5b0-a741d6fe4536.png)
+
 ### or logic gate solution:
 
 ```
@@ -325,6 +329,10 @@ CHIP Or {
 
 ![image](https://user-images.githubusercontent.com/91504420/219874663-37949581-6ff1-423e-99fb-0a113dfd019c.png)
 
+### or gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221359454-489cee0d-3fdc-4dd6-ad30-5f6bf2c43cb4.png)
+
 ### and logic gate solution:
 
 ```
@@ -356,6 +364,11 @@ CHIP And {
 
 ![image](https://user-images.githubusercontent.com/91504420/219875032-3051ae3e-fc3c-46d2-bdba-4bce5f3fbf8b.png)
 
+### and gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221359276-d9e2e41a-90c5-4597-bbae-53793455239c.png)
+
+
 ### xor logic gate solution:
 
 ```
@@ -381,10 +394,48 @@ CHIP Xor {
 ```
 ### output file xor gate:
 
+![image](https://user-images.githubusercontent.com/91504420/221358965-659583d4-964b-40d2-bde3-3df6f7626a6e.png)
 
 
 ### compare file xor gate:
 
+![image](https://user-images.githubusercontent.com/91504420/221358955-8bb0dd5d-5dee-47ff-95a8-f7435b7942ae.png)
+
+### xor gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221359035-dae063c8-61d6-4415-986d-412d98302612.png)
+
+### mux logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux.hdl
+
+CHIP Mux {
+    IN a, b, sel;
+    OUT out;
+
+    PARTS:
+    Not(in=sel, out=nsel);
+    And(a=sel, b=b, out=c1);
+    And(a=nsel, b=a, out=c2);
+    Or(a=c1, b=c2, out=out);
+}
+```
+### output file mux gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221359966-83d84e82-29b1-48eb-a544-b2143d9bf75b.png)
+
+
+### compare file mux gate:
+
+![image](https://user-images.githubusercontent.com/91504420/221359985-7187eb7a-10cb-4c67-bc9c-71163fafc368.png)
+
+### mux gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/221359874-a47e1017-1769-47f7-be9b-ce0b74020a41.png)
 
 <!-- Contact -->
 # :handshake: Contact
