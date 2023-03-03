@@ -107,6 +107,7 @@ Noam Nissan, Hebrew University
   - [11. MULTIPLEXOR](#11-multiplexor)
   - [12. DEMULTIPLEXOR](#12-demultiplexor)
   - [13. PROJECT1](#13-project1)
+  - [14. ALU](#14-alu)
 ## 2. BOOLEAN VALUES
 
 ![TrueOrFalseAndyCohenGIF (2)](https://user-images.githubusercontent.com/91504420/219793288-c281cd34-9b91-4b79-8412-3118b2af6549.gif)
@@ -698,6 +699,159 @@ CHIP DMux4Way {
 ### DMux4Way gate simulation:
 
 ![image](https://user-images.githubusercontent.com/91504420/222669239-85f25d99-928e-4432-aca4-4cefcca02925.png)
+
+### DMux8Way logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/DMux8Way.hdl
+
+/**
+ * 8-way demultiplexor:
+ * {a, b, c, d, e, f, g, h} = {in, 0, 0, 0, 0, 0, 0, 0} if sel == 000
+ *                            {0, in, 0, 0, 0, 0, 0, 0} if sel == 001
+ *                            etc.
+ *                            {0, 0, 0, 0, 0, 0, 0, in} if sel == 111
+ */
+
+CHIP DMux8Way {
+    IN in, sel[3];
+    OUT a, b, c, d, e, f, g, h;
+
+    PARTS:
+    Not(in=sel[0], out=notsel0);
+    Not(in=sel[1], out=notsel1);
+    Not(in=sel[2], out=notsel2);
+    And(a=notsel0, b=notsel1, out=sela1);
+    And(a=sela1, b=notsel2, out=sela);
+    And(a=sela, b=in, out=a);
+    And(a=sel[0], b=notsel1, out=selb1);
+    And(a=selb1, b=notsel2, out=selb);
+    And(a=selb, b=in, out=b);
+    And(a=notsel0, b=sel[1], out=selc1);
+    And(a=selc1, b=notsel2, out=selc);
+    And(a=selc, b=in, out=c);
+    And(a=sel[0], b=sel[1], out=seld1);
+    And(a=seld1, b=notsel2, out=seld);
+    And(a=seld, b=in, out=d);
+    And(a=notsel0, b=notsel1, out=sele1);
+    And(a=sele1, b=sel[2], out=sele);
+    And(a=sele, b=in, out=e);
+    And(a=sel[0], b=notsel1, out=self1);
+    And(a=self1, b=sel[2], out=self);
+    And(a=self, b=in, out=f);
+    And(a=notsel0, b=sel[1], out=selg1);
+    And(a=selg1, b=sel[2], out=selg);
+    And(a=selg, b=in, out=g);
+    And(a=sel[0], b=sel[1], out=selh1);
+    And(a=selh1, b=sel[2], out=selh);
+    And(a=selh, b=in, out=h);
+}
+```
+### output file DMux8Way gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222682871-a1816c60-d8f6-47eb-b810-a3046167eff6.png)
+
+
+### compare file DMux8Way gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222682970-46dd15ef-373f-4bdd-91d1-d04053a2f804.png)
+
+### DMux8Way gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/222685950-ebce3a0f-e5c7-4139-a8ae-2ea780d97252.png)
+
+### Mux4Way16 logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux4Way16.hdl
+
+/**
+ * 4-way 16-bit multiplexor:
+ * out = a if sel == 00
+ *       b if sel == 01
+ *       c if sel == 10
+ *       d if sel == 11
+ */
+
+CHIP Mux4Way16 {
+    IN a[16], b[16], c[16], d[16], sel[2];
+    OUT out[16];
+
+    PARTS:
+    Mux16(a=a, b=b, sel=sel[0], out=outab);
+    Mux16(a=c, b=d, sel=sel[0], out=outcd);
+    Mux16(a=outab, b=outcd, sel=sel[1], out=out);
+}
+```
+
+### output file Mux4Way16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222688440-a72bf93b-fa98-4cad-bc04-b970d012560c.png)
+
+### compare file Mux4Way16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222689010-b9a5315c-16fe-48ac-9fbf-26eec0fad19e.png)
+
+### Mux4Way16 gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/222689584-8a9db23f-ccba-435e-b298-238c402a1965.png)
+
+### Mux8Way16 logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux4Way16.hdl
+
+/**
+ * 4-way 16-bit multiplexor:
+ * out = a if sel == 00
+ *       b if sel == 01
+ *       c if sel == 10
+ *       d if sel == 11
+ */
+
+CHIP Mux4Way16 {
+    IN a[16], b[16], c[16], d[16], sel[2];
+    OUT out[16];
+
+    PARTS:
+    Mux16(a=a, b=b, sel=sel[0], out=outab);
+    Mux16(a=c, b=d, sel=sel[0], out=outcd);
+    Mux16(a=outab, b=outcd, sel=sel[1], out=out);
+}
+```
+
+### output file Mux8Way16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222692038-abdb9e6c-f659-4161-a1e0-dcb02b50b6bc.png)
+
+### compare file Mux8Way16 gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222692111-3cb90396-42b2-46bb-9811-73b9e91d6fd3.png)
+
+### Mux8Way16 gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/222692666-b7d4c997-7ce1-4f39-bb33-4d5af16b6c7a.png)
+
+## 14. ALU
+
+![RonBurgundyBigDealGIF](https://user-images.githubusercontent.com/91504420/222680020-03ed4ca5-719c-43ce-b5c3-3c5b822b109e.gif)
+
+![image](https://user-images.githubusercontent.com/91504420/222679798-897fa3fb-f16b-4925-88f7-c10921eff527.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/91504420/222683793-05df0eb4-010a-43d4-87a0-daaba967470b.png)
+
 
 <!-- Contact -->
 # :handshake: Contact
