@@ -110,6 +110,8 @@ Noam Nissan, Hebrew University
   - [14. ALU](#14-alu)
   - [15. NUMERAL SYSTEM](#15-numeral-system)
   - [16. BINARY NUMBERS](#16-binary-numbers)
+  - [17. BINARY ARITHMETIC](#17-binary-arithmetic)
+  - [18. HACK ALU](#18-hack-alu)
 ## 2. BOOLEAN VALUES
 
 ![TrueOrFalseAndyCohenGIF (2)](https://user-images.githubusercontent.com/91504420/219793288-c281cd34-9b91-4b79-8412-3118b2af6549.gif)
@@ -929,6 +931,44 @@ Overall, numeral systems are essential to mathematics and computing, as they all
 Binary numbers are a base-2 number system that uses only two digits, 0 and 1, to represent all values. Each digit in a binary number represents a power of two, with the rightmost digit representing 2^0 (or 1), the second rightmost representing 2^1 (or 2), and so on. The number is formed by summing the values of the digits that are set to 1. Binary numbers are commonly used in computing and digital electronics because they can easily be represented as electronic signals, and digital logic can easily manipulate them. Converting between binary and decimal (base-10) numbers involves multiplying or adding the powers of 2 corresponding to the set 1 digits in the binary number.
 
 ![image](https://user-images.githubusercontent.com/91504420/222826103-7d109a6b-08df-4ee0-b2e5-8b56730266df.png)
+
+## 17. BINARY ARITHMETIC
+
+![HoodycatHoodycatsGIF](https://user-images.githubusercontent.com/91504420/222828266-23de023c-1d5e-4f3f-be49-b37ccabd4821.gif)
+
+Binary arithmetic is a form of arithmetic that operates on binary numbers, which are numbers represented in the base-2 numeral system. In binary arithmetic, there are only two digits: 0 and 1. Binary arithmetic includes basic mathematical operations such as addition, subtraction, multiplication, and division.
+
+In binary addition, the rules are similar to decimal addition, except that when the sum of two digits is 2 or greater, a carry-over occurs. For example, in binary addition, 1 + 1 = 10, where the 1 is carried over to the next digit. In binary subtraction, the rules are also similar to decimal subtraction, but borrowing may occur when the digit in the minuend is smaller than the corresponding digit in the subtrahend.
+
+In binary multiplication, the process is similar to decimal multiplication, but the multiplication table is much simpler since there are only two digits. In binary division, the process is similar to decimal division, but the steps are more complex since there may be multiple digits involved in the dividend and divisor.
+
+Binary arithmetic is used extensively in computer science and digital electronics since digital devices operate using binary signals. The principles of binary arithmetic are also important for understanding concepts such as binary code, digital circuits, and computer programming.
+
+![image](https://user-images.githubusercontent.com/91504420/222828486-92fb81c0-0559-455f-a541-59057aefe144.png)
+
+![image](https://user-images.githubusercontent.com/91504420/222828706-7f103445-173c-49cf-a05b-69357fb6b9bc.png)
+
+![image](https://user-images.githubusercontent.com/91504420/222828987-57a7616d-c97a-4ff7-b2f5-ffc861c11b5d.png)
+
+![image](https://user-images.githubusercontent.com/91504420/222829455-d3f67f5a-7d40-4ef3-8c96-c8c45a824715.png)
+
+## 18. HACK ALU
+
+![WowTheRockGIF](https://user-images.githubusercontent.com/91504420/222835464-b7ff6e8a-cd0f-4ab9-969a-0965498f26dc.gif)
+
+Hack ALU (Arithmetic Logic Unit) is a component of the Hack computer, which is a simple computer architecture designed for educational purposes. The ALU is responsible for performing arithmetic and logical operations on binary data.
+
+The Hack ALU is a 16-bit unit that supports several arithmetic operations, including addition, subtraction, and bitwise logical operations such as AND, OR, and NOT. It also supports some comparison operations such as equal, less than, and greater than.
+
+The Hack ALU is built using basic logic gates such as AND, OR, and XOR gates, and uses a combination of these gates to perform the various operations. The output of the ALU is a 16-bit value that can be stored in a register or used as input to other components of the computer.
+
+The Hack computer architecture was designed as a teaching tool to help students learn about computer organization and architecture. The design is simple and easy to understand, making it a good starting point for beginners. The Hack ALU is an important component of the computer and provides a basic understanding of how arithmetic and logical operations are performed in a computer system.
+
+![image](https://user-images.githubusercontent.com/91504420/222835265-e79ec11a-b5f5-4569-b2a0-ba3ca7e090c1.png)
+
+![image](https://user-images.githubusercontent.com/91504420/222835588-f52366dc-c1c7-44ff-afb5-6f1f9f4f41c5.png)
+
+![image](https://user-images.githubusercontent.com/91504420/222836405-b2a21dfc-cb48-4c63-9b24-462c72563d8f.png)
 
 
 <!-- Contact -->
