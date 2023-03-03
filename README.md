@@ -108,6 +108,8 @@ Noam Nissan, Hebrew University
   - [12. DEMULTIPLEXOR](#12-demultiplexor)
   - [13. PROJECT1](#13-project1)
   - [14. ALU](#14-alu)
+  - [15. NUMERAL SYSTEM](#15-numeral-system)
+  - [16. BINARY NUMBERS](#16-binary-numbers)
 ## 2. BOOLEAN VALUES
 
 ![TrueOrFalseAndyCohenGIF (2)](https://user-images.githubusercontent.com/91504420/219793288-c281cd34-9b91-4b79-8412-3118b2af6549.gif)
@@ -893,12 +895,40 @@ CHIP Mux4Way16 {
 
 ![RonBurgundyBigDealGIF](https://user-images.githubusercontent.com/91504420/222680020-03ed4ca5-719c-43ce-b5c3-3c5b822b109e.gif)
 
+ALU stands for Arithmetic Logic Unit. It is a digital circuit that performs arithmetic and logic operations on binary numbers. The arithmetic operations include addition, subtraction, multiplication, and division. The logic operations include AND, OR, NOT, and XOR.
+
+The ALU is an essential component of a microprocessor or CPU (Central Processing Unit), where it performs mathematical and logical operations to process instructions and data. It receives input from the processor's registers, performs the necessary operation, and stores the result in a register for later use.
+
+The ALU's design varies depending on the architecture of the processor, but it typically consists of combinational logic circuits and a set of control circuits to manage the operations. ALUs are typically built with a variety of bit-widths, such as 8-bit, 16-bit, 32-bit, or 64-bit, depending on the processor's design.
+
+Overall, the ALU is a critical component of any digital circuit that performs arithmetic and logic operations on binary numbers, making it an essential part of modern computing.
+
 ![image](https://user-images.githubusercontent.com/91504420/222679798-897fa3fb-f16b-4925-88f7-c10921eff527.png)
 
 
+## 15. NUMERAL SYSTEM
 
+![HaveFaithInTheSystemReginaldJuneGIF](https://user-images.githubusercontent.com/91504420/222785705-07ae0b9f-77f8-4e16-864a-bcaf3d2cf6d6.gif)
+
+A numeral system, also known as a number system, is a mathematical notation for representing numbers using digits or symbols. The most commonly used numeral systems are the decimal system (base-10), binary system (base-2), octal system (base-8), and hexadecimal system (base-16).
+
+In a numeral system, each digit represents a specific value, and the position of the digit determines its place value. For example, in the decimal system, the digit "3" represents three ones, while the digit "3" in the tens place represents three tens (or 30).
+
+The binary system is used extensively in computing, where all data is represented in binary form. It uses only two digits (0 and 1) and is the foundation for digital electronics.
+
+The octal system is commonly used in computer programming, particularly when working with Unix or Linux operating systems, while the hexadecimal system is frequently used in computer programming and digital electronics because it provides a convenient way to represent large binary numbers in a compact form.
+
+Overall, numeral systems are essential to mathematics and computing, as they allow us to represent and manipulate numbers in a systematic and consistent way.
 
 ![image](https://user-images.githubusercontent.com/91504420/222683793-05df0eb4-010a-43d4-87a0-daaba967470b.png)
+
+## 16. BINARY NUMBERS
+
+![WeOnlyHaveTwoOnlyTwoGIF](https://user-images.githubusercontent.com/91504420/222825918-ab07621b-89dd-478e-af9f-da1c72cad073.gif)
+
+Binary numbers are a base-2 number system that uses only two digits, 0 and 1, to represent all values. Each digit in a binary number represents a power of two, with the rightmost digit representing 2^0 (or 1), the second rightmost representing 2^1 (or 2), and so on. The number is formed by summing the values of the digits that are set to 1. Binary numbers are commonly used in computing and digital electronics because they can easily be represented as electronic signals, and digital logic can easily manipulate them. Converting between binary and decimal (base-10) numbers involves multiplying or adding the powers of 2 corresponding to the set 1 digits in the binary number.
+
+![image](https://user-images.githubusercontent.com/91504420/222826103-7d109a6b-08df-4ee0-b2e5-8b56730266df.png)
 
 
 <!-- Contact -->
