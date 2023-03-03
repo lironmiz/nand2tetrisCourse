@@ -614,6 +614,91 @@ CHIP Mux16 {
 
 ![image](https://user-images.githubusercontent.com/91504420/221367258-b8a0103b-7e5e-4a46-bba7-3058c72dc8e0.png)
 
+### or8Way logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Or8Way.hdl
+
+/**
+ * 8-way Or: 
+ * out = (in[0] or in[1] or ... or in[7])
+ */
+
+CHIP Or8Way {
+    IN in[8];
+    OUT out;
+
+    PARTS:
+    Or(a=in[0], b=in[1], out=out01);
+	Or(a=in[2], b=in[3], out=out23);
+	Or(a=in[4], b=in[5], out=out45);
+	Or(a=in[6], b=in[7], out=out67);
+	Or(a=out01, b=out23, out=out0123);
+	Or(a=out45, b=out67, out=out4567);
+	Or(a=out0123, b=out4567, out=out);
+}
+```
+### output file or8Way gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222664243-2bf757c2-225d-4f71-9fd9-103fef20b76b.png)
+
+### compare file or8Way gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222664471-86fbab72-d133-40df-aa36-381a2ffc9951.png)
+
+### or8Way gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/222665000-b35e72d7-086e-4bc1-b7a6-740967d8aaae.png)
+
+### DMux4Way logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/DMux4Way.hdl
+
+/**
+ * 4-way demultiplexor:
+ * {a, b, c, d} = {in, 0, 0, 0} if sel == 00
+ *                {0, in, 0, 0} if sel == 01
+ *                {0, 0, in, 0} if sel == 10
+ *                {0, 0, 0, in} if sel == 11
+ */
+
+CHIP DMux4Way {
+    IN in, sel[2];
+    OUT a, b, c, d;
+
+    PARTS:
+    Not(in=sel[0], out=notsel0);
+    Not(in=sel[1], out=notsel1);
+    And(a=notsel0, b=notsel1, out=sela);
+    And(a=sela, b=in, out=a);
+    And(a=sel[0], b=notsel1, out=selb);
+    And(a=selb, b=in, out=b);
+    And(a=notsel0, b=sel[1], out=selc);
+    And(a=selc, b=in, out=c);
+    And(a=sel[0], b=sel[1], out=seld);
+    And(a=seld, b=in, out=d);
+}
+```
+### output file DMux4Way gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222669983-3ed3f593-ae52-48a3-89e2-fa9bf6f247d3.png)
+
+
+### compare file DMux4Way gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222670063-c91905e0-dd71-49db-b634-928d8f483d86.png)
+
+### DMux4Way gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/222669239-85f25d99-928e-4432-aca4-4cefcca02925.png)
+
 <!-- Contact -->
 # :handshake: Contact
 
