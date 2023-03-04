@@ -112,6 +112,7 @@ Noam Nissan, Hebrew University
   - [16. BINARY NUMBERS](#16-binary-numbers)
   - [17. BINARY ARITHMETIC](#17-binary-arithmetic)
   - [18. HACK ALU](#18-hack-alu)
+  - [19. PROJECT2](#19-project2)
 ## 2. BOOLEAN VALUES
 
 ![TrueOrFalseAndyCohenGIF (2)](https://user-images.githubusercontent.com/91504420/219793288-c281cd34-9b91-4b79-8412-3118b2af6549.gif)
@@ -970,6 +971,49 @@ The Hack computer architecture was designed as a teaching tool to help students 
 
 ![image](https://user-images.githubusercontent.com/91504420/222836405-b2a21dfc-cb48-4c63-9b24-462c72563d8f.png)
 
+
+## 19. PROJECT2
+
+![ItsJustTooEasyMonétXChangeGIF](https://user-images.githubusercontent.com/91504420/222895932-b4bae7bd-5180-4c99-b95c-dd1f9a9e833d.gif)
+
+A half adder is a digital circuit that adds two binary digits (bits) and produces a sum bit and a carry bit as output. It is called a "half" adder because it can only add two bits, whereas a full adder can add three bits. The half adder has two inputs, one for each bit being added, and two outputs, one for the sum and one for the carry. The sum output is the result of adding the two input bits together, while the carry output indicates whether there is a carry to the next place value in a multi-digit addition operation. The circuit for a half adder consists of an XOR gate and an AND gate.
+
+![image](https://user-images.githubusercontent.com/91504420/222895953-9b0a3808-d0d9-4a34-95fe-d486397df7c3.png)
+
+### halfAdder logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/02/HalfAdder.hdl
+
+/**
+ * Computes the sum of two bits.
+ */
+
+CHIP HalfAdder {
+    IN a, b;    // 1-bit inputs
+    OUT sum,    // Right bit of a + b 
+        carry;  // Left bit of a + b
+
+    PARTS:
+    Xor(a=a, b=b, out=sum);
+    And(a=a, b=b, out=carry);
+}
+```
+
+### output file halfAdder gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222896101-e36347f5-a458-483d-9bbc-f539d4bc6cbe.png)
+
+### compare file halfAdder gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222896112-cf606bc7-7f51-474c-b674-427571a4cbb7.png)
+
+### halfAdder gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/222896208-0597d4ae-9329-40ee-add3-533c47326f66.png)
 
 <!-- Contact -->
 # :handshake: Contact
