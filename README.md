@@ -976,6 +976,8 @@ The Hack computer architecture was designed as a teaching tool to help students 
 
 ![ItsJustTooEasyMonétXChangeGIF](https://user-images.githubusercontent.com/91504420/222895932-b4bae7bd-5180-4c99-b95c-dd1f9a9e833d.gif)
 
+## half adder 
+
 A half adder is a digital circuit that adds two binary digits (bits) and produces a sum bit and a carry bit as output. It is called a "half" adder because it can only add two bits, whereas a full adder can add three bits. The half adder has two inputs, one for each bit being added, and two outputs, one for the sum and one for the carry. The sum output is the result of adding the two input bits together, while the carry output indicates whether there is a carry to the next place value in a multi-digit addition operation. The circuit for a half adder consists of an XOR gate and an AND gate.
 
 ![image](https://user-images.githubusercontent.com/91504420/222895953-9b0a3808-d0d9-4a34-95fe-d486397df7c3.png)
@@ -1014,6 +1016,49 @@ CHIP HalfAdder {
 ### halfAdder gate simulation:
 
 ![image](https://user-images.githubusercontent.com/91504420/222896208-0597d4ae-9329-40ee-add3-533c47326f66.png)
+
+## full adder
+
+![ImJustTellingTheTruthCalvinRodneyGIF](https://user-images.githubusercontent.com/91504420/222898117-c787d850-3670-4ca8-b6f2-3fd5b2e4641e.gif)
+
+A full adder is a digital circuit that adds three binary digits (bits) and produces a sum bit and a carry bit as output. It is used to add multi-digit binary numbers by combining multiple full adders to create a ripple carry adder. The full adder has three inputs, one for each of the two bits being added and one for the carry-in from the previous place value, and two outputs, one for the sum and one for the carry-out to the next place value. The circuit for a full adder consists of two XOR gates, two AND gates, and an OR gate. The sum output is the result of adding the three input bits together, while the carry output indicates whether there is a carry to the next place value in a multi-digit addition operation.
+
+
+### fullAdder logic gate solution:
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/02/FullAdder.hdl
+
+/**
+ * Computes the sum of three bits.
+ */
+
+CHIP FullAdder {
+    IN a, b, c;  // 1-bit inputs
+    OUT sum,     // Right bit of a + b + c
+        carry;   // Left bit of a + b + c
+
+    PARTS:
+    HalfAdder(a=a, b=b, sum=sumab, carry=carryab);
+    HalfAdder(a=sumab, b=c, sum=sum, carry=carryabc);
+    Or(a=carryab, b=carryabc, out=carry);
+}
+```
+
+### output file fullAdder gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222897796-36ac4b83-42f3-445e-9291-3f1efd4de41b.png)
+
+### compare file fullAdder gate:
+
+![image](https://user-images.githubusercontent.com/91504420/222897807-a496f97b-8637-4e46-a3b7-7b25accb3f28.png)
+
+### fullAdder gate simulation:
+
+![image](https://user-images.githubusercontent.com/91504420/222897676-e644f6f3-e79b-4e18-b1bd-2149f3e71832.png)
 
 <!-- Contact -->
 # :handshake: Contact
